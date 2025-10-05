@@ -1,0 +1,608 @@
+[
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "1",
+        "end_node":  "2",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "1",
+        "end_node":  "17",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "2",
+        "end_node":  "3",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "2",
+        "end_node":  "45",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "3",
+        "end_node":  "4",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "3",
+        "end_node":  "5",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "4",
+        "end_node":  "6",
+        "choice":  "Inferences concerning means"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "4",
+        "end_node":  "12",
+        "choice":  "Inferences concerning variances"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "5",
+        "end_node":  "8",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "5",
+        "end_node":  "9",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "6",
+        "end_node":  "10",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "6",
+        "end_node":  "11",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "8",
+        "end_node":  "13",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "8",
+        "end_node":  "14",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "9",
+        "end_node":  "15",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "9",
+        "end_node":  "16",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "17",
+        "end_node":  "18",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "17",
+        "end_node":  "19",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "18",
+        "end_node":  "20",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "18",
+        "end_node":  "21",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "19",
+        "end_node":  "22",
+        "choice":  "Continuous "
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "19",
+        "end_node":  "23",
+        "choice":  "Binary"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "20",
+        "end_node":  "24",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "20",
+        "end_node":  "25",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "21",
+        "end_node":  "26",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "21",
+        "end_node":  "27",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "23",
+        "end_node":  "66",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "23",
+        "end_node":  "28",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "25",
+        "end_node":  "29",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "25",
+        "end_node":  "30",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "26",
+        "end_node":  "31",
+        "choice":  "1"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "26",
+        "end_node":  "32",
+        "choice":  "2"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "26",
+        "end_node":  "33",
+        "choice":  "More than 2"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "27",
+        "end_node":  "30",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "27",
+        "end_node":  "34",
+        "choice":  "Both variables categorical"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "31",
+        "end_node":  "35",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "31",
+        "end_node":  "36",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "32",
+        "end_node":  "37",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "32",
+        "end_node":  "38",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "33",
+        "end_node":  "39",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "33",
+        "end_node":  "40",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "34",
+        "end_node":  "41",
+        "choice":  "Association"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "34",
+        "end_node":  "42",
+        "choice":  "Reproducibility"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "35",
+        "end_node":  "43",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "35",
+        "end_node":  "44",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "45",
+        "end_node":  "46",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "45",
+        "end_node":  "61",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "46",
+        "end_node":  "47",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "46",
+        "end_node":  "48",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "47",
+        "end_node":  "56",
+        "choice":  "Inferences concerning means"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "47",
+        "end_node":  "49",
+        "choice":  "Inferences concerning variances"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "48",
+        "end_node":  "50",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "48",
+        "end_node":  "51",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "50",
+        "end_node":  "52",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "50",
+        "end_node":  "53",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "51",
+        "end_node":  "90",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "51",
+        "end_node":  "54",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "52",
+        "end_node":  "79",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "52",
+        "end_node":  "55",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "56",
+        "end_node":  "57",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "56",
+        "end_node":  "58",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "57",
+        "end_node":  "59",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "57",
+        "end_node":  "60",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "61",
+        "end_node":  "62",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "61",
+        "end_node":  "63",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "63",
+        "end_node":  "64",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "63",
+        "end_node":  "65",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "66",
+        "end_node":  "67",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "66",
+        "end_node":  "68",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "68",
+        "end_node":  "69",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "68",
+        "end_node":  "70",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "69",
+        "end_node":  "71",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "69",
+        "end_node":  "72",
+        "choice":  "Interested in test of trend over more than two exposure groups"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "70",
+        "end_node":  "73",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "70",
+        "end_node":  "74",
+        "choice":  "Interested in effects of several risk factors on survival"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "71",
+        "end_node":  "75",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "71",
+        "end_node":  "76",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "74",
+        "end_node":  "77",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "74",
+        "end_node":  "78",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "79",
+        "end_node":  "80",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "79",
+        "end_node":  "81",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "80",
+        "end_node":  "82",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "80",
+        "end_node":  "83",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "81",
+        "end_node":  "84",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "81",
+        "end_node":  "85",
+        "choice":  "R x C contingency table, where R \u003e 2, C \u003e 2"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "84",
+        "end_node":  "86",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "84",
+        "end_node":  "87",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "86",
+        "end_node":  "88",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "86",
+        "end_node":  "89",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "90",
+        "end_node":  "91",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "90",
+        "end_node":  "92",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "92",
+        "end_node":  "93",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "92",
+        "end_node":  "94",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "93",
+        "end_node":  "95",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "93",
+        "end_node":  "96",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "94",
+        "end_node":  "97",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "94",
+        "end_node":  "98",
+        "choice":  "Interested in effects of several risk factors on survival"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "95",
+        "end_node":  "99",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "95",
+        "end_node":  "100",
+        "choice":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "98",
+        "end_node":  "101",
+        "choice":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreepath",
+        "fields": {"start_node":  "98",
+        "end_node":  "102",
+        "choice":  "No"
+    }}
+]

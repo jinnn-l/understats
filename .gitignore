@@ -1,0 +1,28 @@
+# Ignore .env file that stores sensitive data
+*/.env
+
+# Ignore compiled Python files
+*.pyc
+__pycache__/
+
+# Ignore Django migrations
+*/migrations/*
+
+# Ignore the database file(If you are using SQLite)
+db.sqlite3
+
+# Ignore media files
+/media/
+
+# Ignore static files(If not committed)
+staticfiles/
+static/
+
+# Ignore virtual environment directories
+venv/
+.env
+.venv
+
+# Ignore IDE files(e.g, for VSCode, PyCharm)
+.vscode/
+.idea/

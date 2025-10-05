@@ -1,0 +1,18 @@
+﻿model,choice_text
+decision_tree.decisiontreechoice,Yes
+decision_tree.decisiontreechoice,No
+decision_tree.decisiontreechoice,Inferences concerning means
+decision_tree.decisiontreechoice,Inferences concerning variances
+decision_tree.decisiontreechoice,More than two variables of interest
+decision_tree.decisiontreechoice,Interested in studying the correlation between two variables
+decision_tree.decisiontreechoice,Continuous 
+decision_tree.decisiontreechoice,Binary
+decision_tree.decisiontreechoice,1
+decision_tree.decisiontreechoice,2
+decision_tree.decisiontreechoice,More than 2
+decision_tree.decisiontreechoice,Both variables categorical
+decision_tree.decisiontreechoice,Association
+decision_tree.decisiontreechoice,Reproducibility
+decision_tree.decisiontreechoice,Interested in effects of several risk factors on survival
+decision_tree.decisiontreechoice,Interested in test of trend over more than two exposure groups
+decision_tree.decisiontreechoice,"R x C contingency table, where R > 2, C > 2"

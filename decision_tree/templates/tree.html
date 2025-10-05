@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load index %}
+
+{% for node in nodes %}
+    <!-- display questions and choices for all previous nodes --> 
+    {% if forloop.counter|add:1 <= nodes|length %}
+        <div class = 'questionbox'>
+            <h2 class = 'question'> {{ forloop.counter }}. {{ node.node_text }}</h2>
+                {% for path in paths_taken %}
+                    {% if path.start_node.pk == node.pk %}
+                        <form id = 'form' method = 'POST'>
+                            {% csrf_token %}
+                            <input type = 'hidden' name = 'node_id' value = '{{ node.pk }}'>
+                            <input type = 'submit' name = 'answer' value = '{{ path.choice.choice_text }}' id = 'button'>
+                        </form>
+                    {% endif %}
+                {% endfor %}
+        </div>
+    <!-- display question and choices to be made for current node -->
+    {% else %}
+        <div class = 'questionbox'>
+            <!-- if the decision tree has reached a terminal node, 
+                 only the final answer and no options will be displayed -->
+            {% if node.node_type == 'terminal' %}
+                <h2 class = 'answer'> {{ node.node_text }}</h2>
+            {% else %}
+                <h2 class = 'question'> {{ forloop.counter }}. {{ node.node_text }}</h2>
+            {% endif %}
+                <form id = 'form' method = 'POST'>
+                    {% csrf_token %}
+                    <input type = 'hidden' name = 'node_id' value = '{{ node.pk }}'>
+                    {% for path in paths_ahead %}
+                    <input type = 'submit' name = 'answer' value = '{{ path.choice.choice_text }}' id = 'button'>
+                    {% endfor %}
+                </form>
+        </div>
+    {% endif %}
+{% endfor %}    
+
+<script>
+    // keep the scroll position of the page after refresh or each POST request
+    document.addEventListener("DOMContentLoaded", function(event) { 
+        var scrollpos = localStorage.getItem('scrollpos');
+        if (scrollpos) window.scrollTo(0, document.body.scrollHeight);
+    });
+
+    window.onbeforeunload = function(e) {
+        localStorage.setItem('scrollpos', window.scrollY);
+    };
+</script>
+{% endblock %}

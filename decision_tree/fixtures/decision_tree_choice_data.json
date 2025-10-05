@@ -1,0 +1,70 @@
+[
+    {
+        "model":  "decision_tree.decisiontreechoice",
+        "fields": {"choice_text":  "Yes"
+    }},
+    {
+        "model":  "decision_tree.decisiontreechoice",
+        "fields": {"choice_text":  "No"
+    }},
+    {
+        "model":  "decision_tree.decisiontreechoice",
+        "fields": {"choice_text":  "Inferences concerning means"
+    }},
+    {
+        "model":  "decision_tree.decisiontreechoice",
+        "fields": {"choice_text":  "Inferences concerning variances"
+    }},
+    {
+        "model":  "decision_tree.decisiontreechoice",
+        "fields": {"choice_text":  "More than two variables of interest"
+    }},
+    {
+        "model":  "decision_tree.decisiontreechoice",
+        "fields": {"choice_text":  "Interested in studying the correlation between two variables"
+    }},
+    {
+        "model":  "decision_tree.decisiontreechoice",
+        "fields": {"choice_text":  "Continuous "
+    }},
+    {
+        "model":  "decision_tree.decisiontreechoice",
+        "fields": {"choice_text":  "Binary"
+    }},
+    {
+        "model":  "decision_tree.decisiontreechoice",
+        "fields": {"choice_text":  "1"
+    }},
+    {
+        "model":  "decision_tree.decisiontreechoice",
+        "fields": {"choice_text":  "2"
+    }},
+    {
+        "model":  "decision_tree.decisiontreechoice",
+        "fields": {"choice_text":  "More than 2"
+    }},
+    {
+        "model":  "decision_tree.decisiontreechoice",
+        "fields": {"choice_text":  "Both variables categorical"
+    }},
+    {
+        "model":  "decision_tree.decisiontreechoice",
+        "fields": {"choice_text":  "Association"
+    }},
+    {
+        "model":  "decision_tree.decisiontreechoice",
+        "fields": {"choice_text":  "Reproducibility"
+    }},
+    {
+        "model":  "decision_tree.decisiontreechoice",
+        "fields": {"choice_text":  "Interested in effects of several risk factors on survival"
+    }},
+    {
+        "model":  "decision_tree.decisiontreechoice",
+        "fields": {"choice_text":  "Interested in test of trend over more than two exposure groups"
+    }},
+    {
+        "model":  "decision_tree.decisiontreechoice",
+        "fields": {"choice_text":  "R x C contingency table, where R \u003e 2, C \u003e 2"
+    }}
+]

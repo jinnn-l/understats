@@ -1,0 +1,614 @@
+[
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "1",
+        "node_type":  "root",
+        "node_text":  "Only one variable of interest?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "2",
+        "node_type":  "internal",
+        "node_text":  "One-sample problem?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "3",
+        "node_type":  "internal",
+        "node_text":  "Underlying distribution normal or can Central Limit Theorem be assumed to hold?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "4",
+        "node_type":  "internal",
+        "node_text":  "Inference concerning mean?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "5",
+        "node_type":  "internal",
+        "node_text":  "Underlying distribution is binomial?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "6",
+        "node_type":  "internal",
+        "node_text":  "Variance known?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "7",
+        "node_type":  "internal",
+        "node_text":  "Inference concerning mean or variance?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "8",
+        "node_type":  "internal",
+        "node_text":  "One-sample binomial test. Normal approximation valid?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "9",
+        "node_type":  "internal",
+        "node_text":  "Underlying distribution is Poisson?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "10",
+        "node_type":  "terminal",
+        "node_text":  "One-sample z-test"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "11",
+        "node_type":  "terminal",
+        "node_text":  "One-sample t-test"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "12",
+        "node_type":  "terminal",
+        "node_text":  "One-sample chi-squared test for variances (Caution: this test is very sensitive to nonnormality)"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "13",
+        "node_type":  "terminal",
+        "node_text":  "Normal-theory methods"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "14",
+        "node_type":  "terminal",
+        "node_text":  "Exact methods"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "15",
+        "node_type":  "terminal",
+        "node_text":  "One-sample Poisson test"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "16",
+        "node_type":  "terminal",
+        "node_text":  "Use other underlying distribution or use nonparametric methods"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "17",
+        "node_type":  "internal",
+        "node_text":  "Interested in relationships between two variables?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "18",
+        "node_type":  "internal",
+        "node_text":  "Both variables continuous?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "19",
+        "node_type":  "internal",
+        "node_text":  "Outcome variable continuous or binary?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "20",
+        "node_type":  "internal",
+        "node_text":  "Interested in predicting one variable from another?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "21",
+        "node_type":  "internal",
+        "node_text":  "One variable continuous and one categorical?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "22",
+        "node_type":  "terminal",
+        "node_text":  "Multiple-regression methods"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "23",
+        "node_type":  "internal",
+        "node_text":  "Time of events important?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "24",
+        "node_type":  "terminal",
+        "node_text":  "Simple linear regression"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "25",
+        "node_type":  "internal",
+        "node_text":  "Interested in studying the correlation between two variables. Both variables normal? "
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "26",
+        "node_type":  "internal",
+        "node_text":  "Number of ways in which the categorical variable can be classified"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "27",
+        "node_type":  "internal",
+        "node_text":  "Ordinal data?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "28",
+        "node_type":  "terminal",
+        "node_text":  "Multiple logistic-regression methods"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "29",
+        "node_type":  "terminal",
+        "node_text":  "Pearson correlation methods"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "30",
+        "node_type":  "terminal",
+        "node_text":  "Rank-correlation methods"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "31",
+        "node_type":  "internal",
+        "node_text":  "Outcome variable normal or can Central Limit Theorem be assumed to hold?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "32",
+        "node_type":  "internal",
+        "node_text":  "Other covariates to be controlled for?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "33",
+        "node_type":  "internal",
+        "node_text":  "Other covariates to be controlled for?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "34",
+        "node_type":  "internal",
+        "node_text":  "Interested in tests of association or reproducibility?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "35",
+        "node_type":  "internal",
+        "node_text":  "Other covariates to be controlled for?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "36",
+        "node_type":  "terminal",
+        "node_text":  "Nonparametric ANOVA - Kruskal-Wallis test"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "37",
+        "node_type":  "terminal",
+        "node_text":  "Two-way ANCOVA"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "38",
+        "node_type":  "terminal",
+        "node_text":  "Two-way ANOVA"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "39",
+        "node_type":  "terminal",
+        "node_text":  "Higher-way ANCOVA"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "40",
+        "node_type":  "terminal",
+        "node_text":  "Higher-way ANOVA"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "41",
+        "node_type":  "terminal",
+        "node_text":  "Contingency-table methods"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "42",
+        "node_type":  "terminal",
+        "node_text":  "Kappa statistic"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "43",
+        "node_type":  "terminal",
+        "node_text":  "One-way ANCOVA"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "44",
+        "node_type":  "terminal",
+        "node_text":  "One-way ANOVA"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "45",
+        "node_type":  "internal",
+        "node_text":  "Two-sample problem?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "46",
+        "node_type":  "internal",
+        "node_text":  "Underlying distribution normal or can Central Limit Theorem be assumed to hold?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "47",
+        "node_type":  "internal",
+        "node_text":  "Inferences concerning means or variances?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "48",
+        "node_type":  "internal",
+        "node_text":  "Underlying distribution is binomial?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "49",
+        "node_type":  "terminal",
+        "node_text":  "Two-sample F-test to compare variances ((Caution: this test is very sensitive to nonnormality))"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "50",
+        "node_type":  "internal",
+        "node_text":  "Are samples independent?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "51",
+        "node_type":  "internal",
+        "node_text":  "Person-time data?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "52",
+        "node_type":  "internal",
+        "node_text":  "Are all expected values greater than or equal to 5?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "53",
+        "node_type":  "terminal",
+        "node_text":  "McNemar\u0027s test"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "54",
+        "node_type":  "terminal",
+        "node_text":  "Use another underlying distribution or use nonparametric methods"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "55",
+        "node_type":  "terminal",
+        "node_text":  "Fisher\u0027s exact test"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "56",
+        "node_type":  "internal",
+        "node_text":  "Are samples independent?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "57",
+        "node_type":  "internal",
+        "node_text":  "Are variances of two samples (tested using F test) significantly different?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "58",
+        "node_type":  "terminal",
+        "node_text":  "Paired t-test"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "59",
+        "node_type":  "terminal",
+        "node_text":  "Two-sample t-test with unequal variances"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "60",
+        "node_type":  "terminal",
+        "node_text":  "Two-sample t-test with equal variances"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "61",
+        "node_type":  "internal",
+        "node_text":  "Underlying distribution normal or can Central Limit Theorem be assumed to hold?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "62",
+        "node_type":  "terminal",
+        "node_text":  "One-way ANOVA"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "63",
+        "node_type":  "internal",
+        "node_text":  "Categorical data?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "64",
+        "node_type":  "terminal",
+        "node_text":  "R x C contingency table methods"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "65",
+        "node_type":  "terminal",
+        "node_text":  "Use another underlying distribution or use nonparametric methods such as Kruskal-Wallis test"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "66",
+        "node_type":  "internal",
+        "node_text":  "One-sample problem?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "67",
+        "node_type":  "terminal",
+        "node_text":  "One-sample test for incidence rates"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "68",
+        "node_type":  "internal",
+        "node_text":  "Incidence rates remain constant over time?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "69",
+        "node_type":  "internal",
+        "node_text":  "Two-sample problem?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "70",
+        "node_type":  "internal",
+        "node_text":  "Interested in comparison of survival curves of two groups with limited control of covariates?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "71",
+        "node_type":  "internal",
+        "node_text":  "Confounding present?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "72",
+        "node_type":  "terminal",
+        "node_text":  "Test of trend for incidence rates"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "73",
+        "node_type":  "terminal",
+        "node_text":  "Log-rank test"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "74",
+        "node_type":  "internal",
+        "node_text":  "Willing to assume several curve comes from a weibull distribution?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "75",
+        "node_type":  "terminal",
+        "node_text":  "Methods for stratified person-time data"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "76",
+        "node_type":  "terminal",
+        "node_text":  "Two-sample test for comparison of incidence rates"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "77",
+        "node_type":  "terminal",
+        "node_text":  "Parameter survival methods based on weibull distribution"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "78",
+        "node_type":  "terminal",
+        "node_text":  "Cox proportional-hazards model"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "79",
+        "node_type":  "internal",
+        "node_text":  "2 x 2 contingency table?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "80",
+        "node_type":  "internal",
+        "node_text":  "Confounding present?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "81",
+        "node_type":  "internal",
+        "node_text":  "2 x k contingency table?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "82",
+        "node_type":  "terminal",
+        "node_text":  "Mantel-Haenszel test"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "83",
+        "node_type":  "terminal",
+        "node_text":  "Two-sample test for binomial proportions, or 2 x 2 contingency table methods"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "84",
+        "node_type":  "internal",
+        "node_text":  "Interested in trend over k binomial proportions?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "85",
+        "node_type":  "terminal",
+        "node_text":  "Chi-squared test for R x C tables"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "86",
+        "node_type":  "internal",
+        "node_text":  "Confounding present?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "87",
+        "node_type":  "terminal",
+        "node_text":  "Chi-squared test for heterogeneity for 2 x k tables"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "88",
+        "node_type":  "terminal",
+        "node_text":  "Mantel Extension test"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "89",
+        "node_type":  "terminal",
+        "node_text":  "Chi-squared test for trend"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "90",
+        "node_type":  "internal",
+        "node_text":  "One-sample problem?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "91",
+        "node_type":  "terminal",
+        "node_text":  "One-sample test for incidence rates"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "92",
+        "node_type":  "internal",
+        "node_text":  "Incidence rates remain constant over time?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "93",
+        "node_type":  "internal",
+        "node_text":  "Two-sample problem?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "94",
+        "node_type":  "internal",
+        "node_text":  "Interested in comparison of survival curves of two groups with limited control of covariates?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "95",
+        "node_type":  "internal",
+        "node_text":  "Confounding present?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "96",
+        "node_type":  "terminal",
+        "node_text":  "Test of trend for incidence rates"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "97",
+        "node_type":  "terminal",
+        "node_text":  "Log-rank test"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "98",
+        "node_type":  "internal",
+        "node_text":  "Willing to assume several curve comes from a weibull distribution?"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "99",
+        "node_type":  "terminal",
+        "node_text":  "Methods for stratified person-time data"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "100",
+        "node_type":  "terminal",
+        "node_text":  "Two-sample test for comparison of incidence rates"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "101",
+        "node_type":  "terminal",
+        "node_text":  "Parameter survival methods based on weibull distribution"
+    }},
+    {
+        "model":  "decision_tree.decisiontreenode",
+        "fields": {"node_id":  "102",
+        "node_type":  "terminal",
+        "node_text":  "Cox proportional-hazards model"
+    }}
+]
