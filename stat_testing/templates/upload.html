@@ -1,34 +1,21 @@
-<!DOCTYPE html>
-<html>
-    {% load static %}
-    <head>
-        <title>understats | Upload File</title>
-    </head>
-    <body>
-        <h1 class="header">Upload your dataset (Accepted file formats: .csv)</h1>
-        {% if not df_html %}
-            <!-- upload data and show preview -->
-            <div class = 'container'>
-                <div class = 'upload_zone'>
-                    <form method = 'POST' accept = '.csv' id = 'csvInput' enctype = 'multipart/form-data'>
-                    {% csrf_token %}
-                    {{ form }}
-                    <input type = 'submit' value = 'Submit'>
-                    </form>
-                </div>
-                <div id = 'info' class = 'info'></div>
-                <div id = 'preview' class = 'preview-container'></div>
-            </div>
-            <script src = "{% static 'preview_csv.js' %}"></script>
-        {% else %}
-            <form method = 'POST' accept = '.csv' enctype = 'multipart/form-data'>
-                {% csrf_token %}
-                {{ form }}
-                <input type = 'submit' value = 'Resubmit'>
+{% extends 'stat_testing_base.html' %}
+
+{% block content %}
+{% load index %}
+{% load static %}
+    <h1 class="header">Upload your dataset (Accepted file formats: .csv)</h1>
+    <!-- upload data -->
+    <div class = 'container'>
+        <div class = 'upload_zone'>
+            <form method = 'POST' accept = '.csv' id = 'csvInput' enctype = 'multipart/form-data'>
+            {% csrf_token %}
+            {{ form }}
+            <input type = 'submit' value = 'Submit'>
             </form>
-            {% for df in df_html %}
-                {{ df|safe }}
-            {% endfor %}
-        {% endif %}
-    </body>
-</html>
+        </div>
+        <!-- preview uploaded csv file-->
+        <div id = 'info' class = 'info'></div>
+        <div id = 'preview' class = 'preview-container'></div>
+        <script src = "{% static 'preview_csv.js' %}"></script>
+    </div>
+{% endblock %}

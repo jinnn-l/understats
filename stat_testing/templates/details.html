@@ -1,0 +1,16 @@
+{% extends 'stat_testing_base.html' %}
+
+{% block content %}
+{% load index %}
+{% load static %}
+    <h1 class="header">Provide additional details for testing</h1>
+    <form action = '' method = 'post'>
+    {% csrf_token %}
+    {{ form.as_ul }}
+    <input type = "submit" value = Submit>
+    <input type = 'hidden' name = 'test_type' value = '{{ test_type }}' id = 'button'>
+    <input type = 'hidden' name = 'df_html' value = '{{ df_html }}' id = 'button'>
+    </form>
+    <!-- shows uploaded data for reference -->
+    {{ df_html|safe }}
+{% endblock %}
