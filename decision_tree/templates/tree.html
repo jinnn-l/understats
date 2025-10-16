@@ -40,7 +40,7 @@
 {% endfor %}    
 
 <script>
-    // keep the scroll position of the page after refresh or each POST request
+    // keep scroll position at the bottom of the page
     document.addEventListener("DOMContentLoaded", function(event) { 
         var scrollpos = localStorage.getItem('scrollpos');
         if (scrollpos) window.scrollTo(0, document.body.scrollHeight);
