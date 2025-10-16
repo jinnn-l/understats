@@ -15,7 +15,7 @@ class StatisticalMethod(ABC):
 
         where each attribute is a inner tuple arranged as follows:
         - discrete attributes
-        (attribute variable name <str>, attribute description as seen by users <st>, allowed choices <tuple>)
+        (attribute variable name <str>, attribute description as seen by users <str>, allowed choices <tuple>)
 
         - continuous attributes
         (attribute variable name <str>, variable type <type> , optional kwargs for the form field <dict>)
