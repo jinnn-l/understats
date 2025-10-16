@@ -33,7 +33,7 @@ class StatisticalMethod(ABC):
 
     #report p-values greater than 0.001 to 3 decimal places
     def report_p_value(self, value):
-        return 'p < 0.001' if value < 0.001 else 'p =' + round(value, 3)
+        return '< 0.001' if value < 0.001 else round(value, 3)
 
 #child classes that inherit from parent class
 class OneSampleTTest(StatisticalMethod):
@@ -84,7 +84,7 @@ class OneSampleTTest(StatisticalMethod):
                         H1: μ {sign} {null_hyp} <br> \
                         degrees of freedom = {n - 1} <br> \
                         t = {t_value} <br> \
-                        p-value = {p_value}'
+                        p-value = {super().report_p_value(p_value)}'
         
         var_name = df[:,var_of_interest][0] if skip_rows else ''
         conf_interval = [sample_mean - t_crit * sem, sample_mean + t_crit * sem]
