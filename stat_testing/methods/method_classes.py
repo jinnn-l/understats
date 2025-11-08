@@ -34,6 +34,18 @@ class StatisticalMethod(ABC):
     #report p-values greater than 0.001 to 3 decimal places
     def report_p_value(self, value):
         return '< 0.001' if value < 0.001 else round(value, 3)
+    
+    #str output to be used for html template
+    def report_result_string(self, results):
+        keys = list(results.keys())
+        str_output = ''
+        for key in keys:
+            if results[key]:
+                str_output += f'{key} = {results[key]} <br>'
+            else:
+                str_output += f'{key} <br>'
+        return str_output
+
 
 #child classes that inherit from parent class
 class OneSampleTTest(StatisticalMethod):
@@ -45,7 +57,7 @@ class OneSampleTTest(StatisticalMethod):
 
     def request_attributes(self) -> tuple: 
         attributes = (
-            (('test_type', 'Type of test', ('left-tailed', 'right-tailed', 'two-tailed')),
+            (('test_subtype', 'Type of test', ('left-tailed', 'right-tailed', 'two-tailed')),
              ('var_of_interest', 'Column of interest (first column is column 0)', self.col_range)),
             (('skip_rows', 'Number of header rows to skip', int, {'min_value': 0, 'max_value': self.nrows - 1, 'initial': 1}),
              ('null_hyp', 'Null hypothesis on the mean', float),
@@ -56,7 +68,7 @@ class OneSampleTTest(StatisticalMethod):
     
     def run_test(self, df, required_attributes) -> dict:
         #reading user input stored in django sessions
-        test_type = required_attributes['test_type']
+        test_subtype = required_attributes['test_subtype']
         var_of_interest = int(required_attributes['var_of_interest'])
         skip_rows = int(required_attributes['skip_rows'])
         null_hyp = float(required_attributes['null_hyp'])
@@ -70,30 +82,37 @@ class OneSampleTTest(StatisticalMethod):
         sem = sample_sd / np.sqrt(n)
         t_value = (sample_mean - null_hyp) / (sample_sd / np.sqrt(n))
 
-        if test_type == 'left-tailed' or 'right_tailed':
+        if test_subtype == 'left-tailed':
             t_crit = t.ppf(conf, n - 1) 
-            p_value = t.sf(t_value, n - 1)
-            sign = '<' if test_type == 'left_tailed' else '>'
+            p_value = 1 - t.sf(np.abs(t_value), n - 1)
+            sign = '<'
+        elif test_subtype == 'right-tailed':
+            t_crit = t.ppf(conf, n - 1) 
+            p_value = t.sf(np.abs(t_value), n - 1)
+            sign = '>'
         else:
             t_crit = t.ppf((1 + conf) / 2, n - 1)
-            p_value = t.sf(t_value, n - 1) * 2
+            p_value = t.sf(np.abs(t_value), n - 1) * 2
             sign = '≠'
-
-        #string to be used by html template
-        str_output = f'H0: μ = {null_hyp} <br> \
-                        H1: μ {sign} {null_hyp} <br> \
-                        degrees of freedom = {n - 1} <br> \
-                        t = {t_value} <br> \
-                        p-value = {super().report_p_value(p_value)}'
         
         var_name = df[:,var_of_interest][0] if skip_rows else ''
         conf_interval = [sample_mean - t_crit * sem, sample_mean + t_crit * sem]
+
+        results = {
+            'H0: μ': null_hyp,
+            f'H1: μ {sign} {null_hyp}': '',
+            'degrees of freedom': n - 1,
+            't_value': t_value,
+            'p_value': super().report_p_value(p_value),
+        }
 
         #table to present calculations 
         table = PrettyTable()
         table.field_names = ['var', 'n', 'sample mean', 'sample sd', f'{conf * 100}% conf. interval', '']
         table.add_row([var_name, n, sample_mean, sample_sd, conf_interval[0], conf_interval[1]])
 
-        return {'table': table.get_html_string(),
-                'str_output': str_output
+        return {
+            'results': results,
+            'table': table.get_html_string(),
+            'str_output': super().report_result_string(results),
         }
