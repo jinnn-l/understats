@@ -108,7 +108,7 @@ class OneSampleTTest(StatisticalMethod):
 
         #table to present calculations 
         table = PrettyTable()
-        table.field_names = ['var', 'n', 'sample mean', 'sample sd', f'{conf * 100}% conf. interval', '']
+        table.field_names = ['var', 'n', 'sample mean', 'sample sd', '', f'{conf * 100}% conf. interval']
         table.add_row([var_name, n, sample_mean, sample_sd, conf_interval[0], conf_interval[1]])
 
         return {

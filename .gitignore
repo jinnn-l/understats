@@ -19,7 +19,6 @@ db.sqlite3
 
 #ignore static files(If not committed)
 staticfiles/
-static/
 
 #ignore virtual environment directories
 venv/

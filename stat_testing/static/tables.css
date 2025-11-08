@@ -1,0 +1,10 @@
+table {
+  border-collapse: collapse;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+}
+
+th, td {
+  padding: 5px;
+  text-align: right;
+}
