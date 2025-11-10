@@ -67,4 +67,6 @@ class DisplayResultsView(TemplateView):
     def get(self, request):
         results = request.session['results']
         return render(request, self.template_name, 
-                      {'table': results['table'], 'str_output': results['str_output']})
+                      {'table': results['table'], 
+                       'str_output': results['str_output'],
+                       'plot': results['plot']})

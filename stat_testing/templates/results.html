@@ -4,12 +4,36 @@
     {% load index %}
     <head>
         <title>understats | View Results</title>
-        <link rel="stylesheet" href="{% static 'tables.css' %}">
+        <link rel = "stylesheet" href = "{% static 'tables.css' %}">
     </head>
     </head>
     <body>
-        <h1 class="header">View test results</h1>
+        <h1 class = "header">View test results</h1>
         {{ table|safe }}
         <p>{{ str_output|safe }}</p>
+
+    <div id = "container" style = "width: 50%;"> 
+        <canvas id = "canvas"></canvas>
+    </div>
+
+    <!--import Chart.js to plot charts -->
+    <script src = "https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- import Chart.js module to plot boxplots and violin plots -->
+    <script src = "https://cdn.jsdelivr.net/npm/@sgratzl/chartjs-chart-boxplot@4.4.5/build/index.umd.min.js"></script>
+
+    <!-- import D3 Scale Chromatic module to generate plot colours -->
+    <script src = "https://d3js.org/d3-color.v1.min.js"></script>
+    <script src = "https://d3js.org/d3-interpolate.v1.min.js"></script>
+    <script src = "https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src = "{% static 'colour_generator.js' %}"></script>
+
+    <!-- generate appropriate type of plot depending on statistical test performed -->
+    {{ plot.group_labels|json_script:'group-labels' }}
+    {{ plot.data_labels|json_script:'data-labels' }}
+    {{ plot.data|json_script:'data' }}
+    {% with plot.plot_type|add:'.js' as chart_static %}
+        <script src = "{% static chart_static %}"></script>
+    {% endwith %}
+  
     </body>
 </html>

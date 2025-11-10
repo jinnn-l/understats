@@ -45,7 +45,23 @@ class StatisticalMethod(ABC):
             else:
                 str_output += f'{key} <br>'
         return str_output
+    
+    #generate input for boxplot.js based on dataset
+    def generate_boxplot(self, group_labels, data_labels, df):
+        '''
+        df is a list of lists of lists in the format
+        [[[dataset_1a], [dataset_1b], [dataset_1c], ...],
+         [[dataset_2a], [dataset_2b], [dataset_2c], ...]]]
 
+        group_labels is a list of strings representing labels of [dataset_1a], [dataset_2a], ...
+        data_labels is a list of strings representing labels of [[dataset_1a], [dataset_1b], [dataset_1c], ...] ...
+        '''
+        return {
+            'plot_type': 'boxplot',
+            'group_labels': group_labels,
+            'data_labels': data_labels,
+            'data': df
+        }
 
 #child classes that inherit from parent class
 class OneSampleTTest(StatisticalMethod):
@@ -98,21 +114,24 @@ class OneSampleTTest(StatisticalMethod):
         var_name = df[:,var_of_interest][0] if skip_rows else ''
         conf_interval = [sample_mean - t_crit * sem, sample_mean + t_crit * sem]
 
-        results = {
+        results_for_testing = {
             'H0: μ': null_hyp,
             f'H1: μ {sign} {null_hyp}': '',
             'degrees of freedom': n - 1,
-            't_value': t_value,
+            't_value': round(t_value, 2),
             'p_value': super().report_p_value(p_value),
         }
 
         #table to present calculations 
         table = PrettyTable()
-        table.field_names = ['var', 'n', 'sample mean', 'sample sd', '', f'{conf * 100}% conf. interval']
-        table.add_row([var_name, n, sample_mean, sample_sd, conf_interval[0], conf_interval[1]])
+        table.field_names = ['var', 'n', 'sample mean', 'sample sd', f'{conf * 100}% conf. interval', '']
+        table.add_row([var_name, n, round(sample_mean, 3), round(sample_sd, 3), round(conf_interval[0], 3), round(conf_interval[1], 3)])
+
+        plot = super().generate_boxplot([''], [var_name], [list(data)])
 
         return {
-            'results': results,
+            'results_for_testing': results_for_testing,
             'table': table.get_html_string(),
-            'str_output': super().report_result_string(results),
+            'str_output': super().report_result_string(results_for_testing),
+            'plot': plot,
         }
