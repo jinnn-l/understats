@@ -9,17 +9,20 @@ from .methods import method_factory
 class UploadFileView(TemplateView):
     template_name = 'upload.html'
 
+    #render empty form for user to fill
     def get(self, request):
         upload_form = UploadFileForm()
         return render(request, 'upload.html', {'form': upload_form})
     
+    #user returns filled form
     def post(self, request):
         upload_form = UploadFileForm(request.POST, request.FILES)
 
         if upload_form.is_valid():
-            test = request.POST['test']
-            file = request.FILES['file']
+            test = request.POST['test'] #selected test type
+            file = request.FILES['file'] #file upload
             try:
+                #convert csv file to pandas dataframe
                 df = pd.read_csv(file, header = None)
                 #store uploaded input in django sessions
                 request.session['dataframe'] = df.to_json(orient = 'records', lines = True)

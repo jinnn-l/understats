@@ -1,8 +1,10 @@
+// based on size of dataset provided by user
 const groupLabels = JSON.parse(document.getElementById('group-labels').textContent);
 const dataLabels = JSON.parse(document.getElementById('data-labels').textContent);
 const data = JSON.parse(document.getElementById('data').textContent);
 const numberOfDatasets = dataLabels.length;
 
+// generate list of colours based on size of dataset 
 var colours = interpolateColors(numberOfDatasets);
 
 let dataset = [];
