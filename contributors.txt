@@ -1,0 +1,18 @@
+December 2022 - January 2023 (Wang Junwei)
+- Created the django application with "questions" app in it 
+- Initialised the database in postgresql
+- Linked all the questions inside the database based on their id
+- Developed the decision tree structure on the webpage where the user will be able to reach the final answer based on a series of their own inputs (Subsequent questions will show based on their input)
+- Coded it such that previous questions will all stay on the screen with the next question at the bottom 
+
+August 2025 - November 2025 (Li Jin)
+- Adapted and redesigned the decision tree model
+- Populated the decision tree using fixtures based on Rosner's Fundamentals of Biostatistics (8th ed.)
+- Modified views for decision tree based on changes in decision tree structure
+- Implemented a generic statistic test class and factory class to produce instances of tests based on user input
+- Implemented the Student's t-test class
+- Implemented views for user to upload data, input required attributes, and view results
+- Adapted Javascript code for user to preview uploaded csv file
+- Utilised Chart.js and chartjs-chart-boxplot to plot boxplots
+- Adapted Javascript code and D3's Color Interpolation module to generate plot colours
+- Implemented unit tests for left-tailed, right-tailed, and two-tailed Student's t-test
